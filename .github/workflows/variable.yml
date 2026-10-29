@@ -31,3 +31,11 @@ jobs:
                 echo ${{github.ref}}
                 echo ${{env.MA_VARIABLE}}
                 echo ${{runner.os}}
+
+    autre-job:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Récupérer le dépôt
+            uses: actions/checkout@v7
+          - name: lister les fichiers
+            run: ls -la
