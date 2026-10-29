@@ -42,6 +42,7 @@ jobs:
           run: echo "Linting du code..."
         - name: Afficher la version de la qualité du code
           run: echo "La version de la qualité du code" ${{ needs.quality-code-version.outputs.quality-code-version }}
+          
   build:
       runs-on: ubuntu-latest
       needs: [test]
