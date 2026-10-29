@@ -17,7 +17,6 @@ jobs:
         - name: Linting du code
           run: echo "Linting du code..."
         - name: Afficher la version de la qualité du code
-          id: quality-code-version
           run: echo "La version de la qualité du code" ${{ steps.quality-code-version.outputs.quality-code-version }}
   static-analysis:
       runs-on: ubuntu-latest
