@@ -12,6 +12,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Récupérer le dépôt
-              uses: actions/checkout@v7
-            - name: Lister les fichiers du dépôt
+              uses: actions/checkout@v2
+            - name: Lister les fichiers du dépôt test
               run: ls -la
